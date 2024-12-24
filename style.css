@@ -1,0 +1,230 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.active {
+    background-color: #007bff;
+}
+
+.page {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Week Layout */
+.weeks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.week {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.checkboxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.checkboxes label {
+    font-size: 14px;
+}
+
+/* Calendar */
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.calendar-table th, .calendar-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.calendar-table th {
+    background-color: #f1f1f1;
+}
+
+/* Carousel Styles */
+.carousel-item {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.carousel-item li {
+    padding: 5px 0;
+}
+
+/* Style for the Workout Page */
+.workout-list {
+    margin: 20px;
+    font-size: 1.2rem;
+}
+
+.workout-btn {
+    background-color: #007BFF; /* Changed to a more visible blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.workout-btn:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+}
+
+.workout-details {
+    margin-top: 20px;
+}
+
+.workout-content {
+    display: none;
+    background-color: #f8f9fa; /* Light background for content */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.workout-content h3 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.workout-content h4 {
+    color: #444;
+    font-size: 1.2rem;
+}
+
+.workout-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.workout-content ul li {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+.workout-content.active {
+    display: block;
+    background-color: #e9ecef; /* Slightly darker background for active content */
+}
+
+.workout-list button {
+    background-color: #28a745; /* Green button color for better contrast */
+    color: white;
+}
+
+.workout-list button:hover {
+    background-color: #218838; /* Darker green for hover effect */
+}
+
+
+/* Playlist Styles */
+#playlist-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#playlist-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#playlist-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#playlist-list a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weeks-container {
+        flex-direction: column;
+    }
+}

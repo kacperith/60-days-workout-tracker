@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>60 Days Workout Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#main-page" class="active" onclick="navigate('main-page')">Main Page</a></li>
+            <li><a href="#workouts" onclick="navigate('workouts')">Workouts</a></li>
+            <li><a href="#playlist" onclick="navigate('playlist')">Playlist</a></li>
+        </ul>
+    </nav>
+
+    <div id="main-page" class="page">
+        <header>
+            <h1>60 Days Workout Tracker</h1>
+        </header>
+
+        <section class="checklist">
+            <h2>Daily Checklist</h2>
+            <div class="weeks-container">
+                <!-- Weekly Checklist -->
+                <div class="week" data-week="1">
+                    <h3>Day 1</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <!-- Repeat for other weeks (2-8) -->
+                <div class="week" data-week="2">
+                    <h3>Day 2</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="3">
+                    <h3>Day 3</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="4">
+                    <h3>Day 4</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="5">
+                    <h3>Day 5</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="6">
+                    <h3>Day 6</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="7">
+                    <h3>Day 7</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="8">
+                    <h3>Day 8</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="9">
+                    <h3>Day 9</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="10">
+                    <h3>Day 10</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="11">
+                    <h3>Day 11</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="12">
+                    <h3>Day 12</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="13">
+                    <h3>Day 13</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="14">
+                    <h3>Day 14</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="15">
+                    <h3>Day 15</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="16">
+                    <h3>Day 16</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="17">
+                    <h3>Day 17</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="18">
+                    <h3>Day 18</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="19">
+                    <h3>Day 19</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="20">
+                    <h3>Day 20</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="21">
+                    <h3>Day 21</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="22">
+                    <h3>Day 22</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="23">
+                    <h3>Day 23</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="24">
+                    <h3>Day 24</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="25">
+                    <h3>Day 25</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="26">
+                    <h3>Day 26</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="27">
+                    <h3>Day 27</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="28">
+                    <h3>Day 28</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="29">
+                    <h3>Day 29</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="30">
+                    <h3>Day 30</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="31">
+                    <h3>Day 31</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="32">
+                    <h3>Day 32</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="33">
+                    <h3>Day 33</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="35">
+                    <h3>Day 35</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="36">
+                    <h3>Day 36</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="37">
+                    <h3>Day 37</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="38">
+                    <h3>Day 38</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="39">
+                    <h3>Day 39</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="40">
+                    <h3>Day 40</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="41">
+                    <h3>Day 41</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="42">
+                    <h3>Day 42</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="43">
+                    <h3>Day 43</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="44">
+                    <h3>Day 44</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="45">
+                    <h3>Day 45</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="46">
+                    <h3>Day 46</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="47">
+                    <h3>Day 47</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="48">
+                    <h3>Day 48</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="49">
+                    <h3>Day 49</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="50">
+                    <h3>Day 50</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="51">
+                    <h3>Day 51</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="52">
+                    <h3>Day 52</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="53">
+                    <h3>Day 53</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="54">
+                    <h3>Day 54</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="55">
+                    <h3>Day 55</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="56">
+                    <h3>Day 56</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="57">
+                    <h3>Day 57</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="58">
+                    <h3>Day 58</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="59">
+                    <h3>Day 59</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <div class="week" data-week="60">
+                    <h3>Day 60</h3>
+                    <div class="checkboxes">
+                        <label><input type="checkbox"> Push</label>
+                        <label><input type="checkbox"> Core</label>
+                        <label><input type="checkbox"> Pull</label>
+                        <label><input type="checkbox"> Full Body</label>
+                        <label><input type="checkbox"> Legs</label>
+                        <label><input type="checkbox"> Rest</label>
+                        <label><input type="checkbox"> Rest</label>   
+                    </div>
+                </div>
+                <!-- Add more weeks similarly -->
+            </div>
+        </section>
+
+        <section class="calendar">
+            <h2>Calendar</h2>
+            <table class="calendar-table">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div id="workouts" class="page">
+        <header>
+            <h1>Workout Routines</h1>
+        </header>
+    
+        <section class="workout-list">
+            <h2>Choose Your Workout Day</h2>
+            <ul>
+                <li><button class="workout-btn" onclick="showWorkout('push')">Push Day</button></li>
+                <li><button class="workout-btn" onclick="showWorkout('pull')">Pull Day</button></li>
+                <li><button class="workout-btn" onclick="showWorkout('legs')">Leg Day</button></li>
+                <li><button class="workout-btn" onclick="showWorkout('core')">Core & Abs Day</button></li>
+                <li><button class="workout-btn" onclick="showWorkout('fullbody')">Full Upper & Lower Body Day</button></li>
+            </ul>
+        </section>
+    
+        <section class="workout-details">
+            <div id="push" class="workout-content">
+                <h3>Push Day (Chest, Shoulders, Triceps)</h3>
+                <h4>Warm-Up: 1000 Jump Ropes</h4>
+                <ul>
+                    <li>Dumbbell Chest Press</li>
+                    <li>Dumbbell Shoulder Press</li>
+                    <li>Dumbbell Lateral Raises</li>
+                    <li>Resistance Band Chest Fly</li>
+                    <li>Dumbbell Tricep Kickbacks</li>
+                    <li>Resistance Band Overhead Tricep Extension</li>
+                </ul>
+                <h4>Cool-Down: Stretching</h4>
+                <ul>
+                    <li>Chest stretch</li>
+                    <li>Shoulder stretches</li>
+                    <li>Triceps stretch</li>
+                </ul>
+            </div>
+    
+            <div id="pull" class="workout-content">
+                <h3>Pull Day (Back, Biceps)</h3>
+                <h4>Warm-Up: 1000 Jump Ropes</h4>
+                <ul>
+                    <li>Dumbbell Rows</li>
+                    <li>Resistance Band Pull-Aparts</li>
+                    <li>Dumbbell Deadlifts</li>
+                    <li>Resistance Band Lat Pulldown</li>
+                    <li>Dumbbell Bicep Curls</li>
+                    <li>Hammer Curls</li>
+                </ul>
+                <h4>Cool-Down: Stretching</h4>
+                <ul>
+                    <li>Child’s pose</li>
+                    <li>Biceps stretch</li>
+                    <li>Upper back stretch</li>
+                </ul>
+            </div>
+    
+            <div id="legs" class="workout-content">
+                <h3>Leg Day (Quads, Hamstrings, Glutes, Calves)</h3>
+                <h4>Warm-Up: 1000 Jump Ropes</h4>
+                <ul>
+                    <li>Dumbbell Squats</li>
+                    <li>Resistance Band Squats</li>
+                    <li>Dumbbell Lunges</li>
+                    <li>Resistance Band Glute Kickbacks</li>
+                    <li>Dumbbell Romanian Deadlifts</li>
+                    <li>Calf Raises with Dumbbells</li>
+                </ul>
+                <h4>Cool-Down: Stretching</h4>
+                <ul>
+                    <li>Hamstring stretch</li>
+                    <li>Quad stretch</li>
+                    <li>Glute stretch</li>
+                </ul>
+            </div>
+    
+            <div id="core" class="workout-content">
+                <h3>Core & Abs Day</h3>
+                <h4>Warm-Up: 1000 Jump Ropes</h4>
+                <ul>
+                    <li>Resistance Band Russian Twists</li>
+                    <li>Dumbbell Side Bends</li>
+                    <li>Plank with Dumbbell Rows</li>
+                    <li>Dumbbell Leg Raises</li>
+                    <li>Resistance Band Woodchoppers</li>
+                    <li>Dumbbell Bicycle Crunches</li>
+                </ul>
+                <h4>Cool-Down: Stretching</h4>
+                <ul>
+                    <li>Cobra stretch</li>
+                    <li>Side stretches</li>
+                    <li>Lower back stretch</li>
+                </ul>
+            </div>
+    
+            <div id="fullbody" class="workout-content">
+                <h3>Full Upper & Lower Body Day</h3>
+                <h4>Warm-Up: 1000 Jump Ropes</h4>
+                <ul>
+                    <li>Dumbbell Deadlifts</li>
+                    <li>Dumbbell Squat to Press</li>
+                    <li>Resistance Band Deadlifts</li>
+                    <li>Dumbbell Reverse Lunge to Bicep Curl</li>
+                    <li>Resistance Band Chest Press</li>
+                    <li>Dumbbell Renegade Rows</li>
+                </ul>
+                <h4>Cool-Down: Stretching</h4>
+                <ul>
+                    <li>Full body stretch</li>
+                    <li>Forward fold stretch</li>
+                    <li>Shoulder and arm stretches</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+
+    <div id="playlist" class="page hidden">
+        <header>
+            <h1>Playlist</h1>
+        </header>
+        <section>
+            <h2>Daily Playlist</h2>
+            <ul id="playlist-list">
+                <li>Day 1: <a href="https://www.youtube.com/watch?v=iEobp7WNG4g">Hot Girl</a></li>
+                <li>Day 2: <a href="https://youtu.be/spHkzkRSDTs?si=d9Lo_4UFCKFkV7fa">Center of Attraction</a></li>
+                <li>Day 3: <a href="https://youtu.be/2Fk_ew-kJlc?si=7Cg-K2ZMjhD3vn8z">Give me more</a></li>
+                <li>Day 4: <a href="https://youtu.be/LvFl5rqR6hA">Boost your Confidence</a></li>
+                <li>Day 5: <a href="https://youtu.be/BTQ__UgXIIs?si=hQc4qj5vGTh5U_vb">Woman Energy</a></li>
+                <li>Day 6: <a href="https://youtu.be/WgBziwUOxEQ?si=R-Efw7dkCO_zxOal">Girl Boss</a></li>
+                <li>Day 7: <a href="https://youtu.be/N0ZvDGQJHBc?si=vKQXfziGrc0Wohh_">Too Hot</a></li>
+                <li>Day 8: <a href="https://youtu.be/uapubNs3ca8?si=LwtZjKrK_ZnnU7az">Y2k</a></li>
+                <li>Day 9: <a href="https://youtu.be/u5iC5RIQg-A?si=dnnjWxzbCrZFTAAs">Nostalgia</a></li>
+                <li>Day 10: <a href="https://youtu.be/OEp-3kKn5wA?si=RIyIcXDSZwvUAiW_">Baddie</a></li>
+                <li>Day 11: <a href="https://youtu.be/dnT9bm6MDvE?si=58JUZC6pmxg75NKn">Slay</a></li>
+                <li>Day 12: <a href="https://youtu.be/6fYWtoA5cO4?si=ZrsA33KXVGNGdbYJ">Glow Up</a></li>
+                <li>Day 13: <a href="https://youtu.be/157j3719m-U?si=uQK760wdO8bmbeuB">Getting Ready</a></li>
+                <li>Day 14: <a href="https://youtu.be/ARfyAekQVcE?si=86awzIRF6GUJLOQt">Baddie girl</a></li>
+                <li>Day 15: <a href="https://youtu.be/vL9QYMjRVbs?si=oG5-WCf2Vls8HX_g">Cutie y2k</a></li>
+                <li>Day 16: <a href="https://youtu.be/Lw0bHcJ9E-0?si=9uBPlHkcBm3wEb9F">Slay Era</a></li>
+                <li>Day 17: <a href="https://youtu.be/S3SkU6ZMKIg?si=cQjYF8QIVRzOcvjI">Everyone's Obsessed with you</a></li>
+                <li>Day 18: <a href="https://youtu.be/Y5mAAC-sph0?si=ahWMQxQR6XpA74ud">Gen Z Nostalgia</a></li>
+                <li>Day 19: <a href="https://youtu.be/0uaDw3Ri4jE?si=Y9Kq5FT_dr2XdXNp">boost</a></li>
+                <li>Day 20: <a href="https://youtu.be/UbptdMqpen4?si=6SqInml0nv-Ec5_8">Feel Attractive</a></li>
+                <li>Day 21: <a href="https://youtu.be/Cw6x-mJyuqY?si=mz_NOqY68QI5iI2O">Main Character</a></li>
+                <li>Day 22: <a href="https://youtu.be/hyRLuEY2_f8?si=_HPPRIf9S_uu1XgG">Scream your heart out</a></li>
+                <li>Day 23: <a href="https://youtu.be/B_wDlC4tnGo?si=4v0CPPlo0Izu-3Do">Baddie Girlie</a></li>
+                <li>Day 24: <a href="https://youtu.be/WHaJR4dXTTs?si=xS7tSjkVvoAW6QL1">Hype Baddie Music</a></li>
+                <li>Day 25: <a href="https://youtu.be/7l33aoPYZMc">New Era</a></li>
+                <li>Day 26: <a href="https://youtu.be/Fx01Hmw8ufA?si=GuMhpmAhHf7GFcqJ">It Girl</a></li>
+                <li>Day 27: <a href="https://youtu.be/V-MR2faI0-c?si=UFhERyFkOQp3kB6j">Maddie is a baddie</a></li>
+                <li>Day 28: <a href="https://youtu.be/ng-UR73qaKg?si=o8AYEL2meIbk3EZ2">POV: You're that girl</a></li>
+                <li>Day 29: <a href="https://youtu.be/VPw_cv2DGVA?si=JR5Irz10hyis8xcq">Ultimate girl power</a></li>
+                <li>Day 30: <a href="https://youtu.be/tE39_40ZZZ8?si=08vW_Qt2_ngsZFhI">Self Care</a></li>
+                <li>Day 31: <a href="https://youtu.be/NWfPe7sJac4?si=8lt9t866sraTIaDH">Girl Power Energy</a></li>
+                <li>Day 32: <a href="https://youtu.be/rEkWTZH86E4?si=3geI1JED4CQWFOPX">GRWM</a></li>
+                <li>Day 33: <a href="https://youtu.be/GaF-WwuTyd0?si=VajFLfIvvx17Fr0R">Rich vibes</a></li>
+                <li>Day 34: <a href="https://youtu.be/cc34Z6Dfq5w?si=R0GSZw6SYOYgHcYM">Workout</a></li>
+                <li>Day 35: <a href="https://youtu.be/SjADDMV14oc?si=ij-K7VxDU6GKae3e">Confidence is a baddie</a></li>
+                <li>Day 36: <a href="https://youtu.be/egTPHfPpOQw">Material girl that slays the runway</a></li>
+                <li>Day 37: <a href="https://youtu.be/2ZCR2UXAU_A?si=maXiR1eEsp37B4-v">For a glass of brandy</a></li>
+                <li>Day 38: <a href="https://youtu.be/YUPQ1AEwZ64?si=mvRorfyk3PO0yJDP">Fold your clothes</a></li>
+                <li>Day 39: <a href="https://youtu.be/lagprCcM6ZY?si=zoU-zyTY30gzym-Y">Baby! Put your butt in the sky!</a></li>
+                <li>Day 40: <a href="https://youtu.be/sLCAIWJbOLY?si=U5nk7hJFSUbSiMOv">See life as fresh as the *******</a></li>
+                <li>Day 41: <a href="https://youtu.be/f0yh6bQdSMc?si=cLb6ND1w0N7V1xDh">Monday game</a></li>
+                <li>Day 42: <a href="https://youtu.be/77sJrs5rZnU?si=4KVVvRQqJ9lGg21w">Most Definitely</a></li>
+                <li>Day 43: <a href="https://youtu.be/Mpi2781Jzko?si=eFtIQA-Xu06Zv6Bv">Underground is not in the book</a></li>
+                <li>Day 44: <a href="https://youtu.be/WoctpM7VeX8?si=yX_FR3EBSIxqswlV">No drama, a bit violent, not good</a></li>
+                <li>Day 45: <a href="https://youtu.be/gy11TzyyaDg?si=JNDq3YVgV5P_4c5S">Make that guy cry</a></li>
+                <li>Day 46: <a href="https://youtu.be/GHtEakx7Z7U?si=xHtA1cSETrtL0hLB">Chill with the sofa</a></li>
+                <li>Day 47: <a href="https://youtu.be/5GWqK5KWp9k?si=y89CMUUpv19FxPw2">I like people with good finances</a></li>
+                <li>Day 49: <a href="https://youtu.be/jrPObh_w42g?si=tPuGnq6fpa4C5Ugj">I haven't drank yet</a></li>
+                <li>Day 50: <a href="https://youtu.be/gRU7tDGVkd4?si=_MVAculkaXQA17RI">Offer me a whiskey</a></li>
+                <li>Day 51: <a href="https://youtu.be/qhnnoR1Z420?si=v8PoJAdStjOLFYjG">What did you eat this morning?</a></li>
+                <li>Day 52: <a href="https://youtu.be/7abZElWDTmw?si=atbCZGrDSTiYbGWU">Dance party</a></li>
+                <li>Day 53: <a href="https://youtu.be/rlecng3zDRU?si=kbfZa-j0RPAei7xc">Women energy playlist</a></li>
+                <li>Day 54: <a href="https://youtu.be/qeDk4vNl0rA?si=o-os4d6lJNZKA4yi">Lust is only worth taking advantage of</a></li>
+                <li>Day 55: <a href="https://youtu.be/wG-w4sv15YM?si=WplSzN9aKkMCFdfp">Enjoy it while you can</a></li>
+                <li>Day 56: <a href="https://youtu.be/QS3qtGhFYC8?si=ipckAjePgKlv5hmM">You were born a bad girl</a></li>
+                <li>Day 57: <a href="https://youtu.be/zEXA4DEtXC8?si=nCDg0HcGG1ErLpyk">Attractive Vibes</a></li>
+                <li>Day 58: <a href="https://youtu.be/nVxwgiXG5q0?si=gr7HIdTe-Ys4ZQbY">Supermodel in a runway</a></li>
+                <li>Day 59: <a href="https://youtu.be/zF6-wATRiJ0?si=aBH4hbnlGYVttovz">You're hot</a></li>
+                <li>Day 60: <a href="https://youtu.be/CHuN--GFcIc?si=Wpv4GaE4D1eNetAJ">Real Confident Girl</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
